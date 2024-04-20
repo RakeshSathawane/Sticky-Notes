@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Note</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="leftBox">
+        <div class="text-flex">
+          <textarea id="noteText" placeholder="Write a text here"></textarea>
+          <div class="colors">
+            <div class="color-head">
+              <input type="color" class="picker" id="bgColor" />
+              <h3>Bg Color</h3>
+            </div>
+            <div class="color-head">
+              <input
+                type="color"
+                class="picker"
+                id="textColor"
+                value="#f8cebc"
+              />
+              <h3>Text Color</h3>
+            </div>
+          </div>
+        </div>
+
+        <button id="btn">Add Note</button>
+      </div>
+
+      <div id="rightBox">
+        <h1>Your Notes</h1>
+        <div id="textDisplay"></div>
+      </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
